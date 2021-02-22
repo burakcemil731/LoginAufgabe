@@ -6,7 +6,7 @@ Entwickeln Sie eine Bibliothek, mit der Benutzeranmeldungen bei Websites verwalt
 
 Der Kontrakt für die Leistungen der Bibliothek soll so aussehen:
 
-interface IRegistrierung {
+`interface IRegistrierung {
 	void Registrieren(string email, string passwort, string nickname);
 	void Bestätigen(string registrierungsnummer);
 }
@@ -34,7 +34,7 @@ class Benutzer {
 	DateTime Registrierungsdatum;
 	DateTime LetzteAnmeldung;
 	DateTime LetzteAktualisierung;
-}
+}`
 Neue Benutzer registrieren sich zunächst. Sie müssen mindestens ihre Email-Adresse angeben. Wenn kein Passwort gewählt wurde, generiert die Registrierung eines, das der Benutzer später ändern kann.
 
 Wer sich registriert, bekommt eine Registrierungsemail geschickt mit einem Link zur Bestätigung, in dem eine Registrierungsnummer enthalten ist. Erst wenn die Registrierung mit dieser Nummer bestätigt ist, ist der Benutzer permanent im System (Benutzer.Bestätigt ist dann true).
