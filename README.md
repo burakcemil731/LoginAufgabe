@@ -6,7 +6,7 @@ Entwickeln Sie eine Bibliothek, mit der Benutzeranmeldungen bei Websites verwalt
 
 Der Kontrakt für die Leistungen der Bibliothek soll so aussehen:
 
-```
+```csharp
 interface IRegistrierung {
 	void Registrieren(string email, string passwort, string nickname);
 	void Bestätigen(string registrierungsnummer);
